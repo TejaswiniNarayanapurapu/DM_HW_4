@@ -61,16 +61,16 @@ def question7():
     answers = {}
 
     # bool: True/False
-    answers["(a)"] = None
-    answers["(b)"] = None
-    answers["(c)"] = None
-    answers["(d)"] = None
+    answers["(a)"] = "True"
+    answers["(b)"] = "True"
+    answers["(c)"] = "False"
+    answers["(d)"] = "True"
 
     # explain_string: explanation in english prose
-    answers["(a) explain"] = None
-    answers["(b) explain"] = None
-    answers["(c) explain"] = None
-    answers["(d) explain"] = None
+    answers["(a) explain"] = "In the back-propagation algorithm, the gradients of the weights at layer k+1 can indeed be computed using the gradients at layer k. This is because the error derivative with respect to a weight in layer k depends on the derivative of the error with respect to the neuron outputs in layer k+1."
+    answers["(b) explain"] = "The activations at nodes in layer k+1 are computed using the outputs (activations) of nodes in layer k as inputs. This is a fundamental aspect of how neural networks propagate information forward from input to output."
+    answers["(c) explain"] = "The vanishing gradient problem refers to the issue where gradients become increasingly small as the error is backpropagated through the layers. This makes the weights in the earlier layers change very slowly, if at all, which slows down training or leads to poor convergence. It does not refer to the training errors vanishing to zero while test errors remain large; that scenario is more indicative of overfitting."
+    answers["(d) explain"] = "If the ANN model perfectly classifies all training instances at a given iteration, it means the predicted output matches the expected output for every instance, resulting in a zero loss gradient. Consequently, the gradients of loss with respect to weights at all layers will be zero, indicating no error to propagate back through the network."
 
     return answers
 
