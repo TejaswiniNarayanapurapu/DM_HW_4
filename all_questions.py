@@ -114,12 +114,12 @@ def question9():
     answers = {}
 
     # int
-    answers["(a) K"] = None
-    answers["(b) K"] = None
+    answers["(a) K"] = 5
+    answers["(b) K"] = 5
 
     # explain_string
-    answers["(a) explain"] = None
-    answers["(b) explain"] = None
+    answers["(a) explain"] = "A K of 5 is chosen as it typically offers a good balance between bias and variance, making the model robust to noise and outliers without overfitting or underfitting. It considers enough neighbors to make a reasonable prediction while smoothing out local variations and noise."
+    answers["(b) explain"] = "Similar to scenario (a), a K of 5 provides a balanced approach for most datasets capturing the underlying trends without being too sensitive to noise.It's a good starting point that can be adjusted based on cross-validation to achieve better performance specific to the dataset characteristics."
 
     return answers
 
