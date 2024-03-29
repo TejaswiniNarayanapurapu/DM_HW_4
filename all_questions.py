@@ -8,16 +8,16 @@ def question1():
     answers = {}
 
     # string "yes" or "no"
-    answers["(a)"] = None
-    answers["(b)"] = None
-    answers["(c)"] = None
-    answers["(d)"] = None
+    answers["(a)"] = "no"
+    answers["(b)"] = "no"
+    answers["(c)"] = "yes"
+    answers["(d)"] = "yes"
 
     # explain-string: explanation in english prose
-    answers["(a) explain"] = None
-    answers["(b) explain"] = None
-    answers["(c) explain"] = None
-    answers["(d) explain"] = None
+    answers["(a) explain"] = "For example, a person can be both a homeowner and have a low annual income, which means rules 1 and 3 can apply simultaneously"
+    answers["(b) explain"] = "There are combinations of attribute values not covered by any rule, such as a person with a medium annual income and not currently employed."
+    answers["(c) explain"] = "Because the outcome for a given person could change depending on the order in which the rules are applied. For instance, rules 5 and 7 could potentially conflict depending on the person's attributes."
+    answers["(d) explain"] = "a default class is needed for situations where none of the provided rules apply to a person's situation."
 
     return answers
 
