@@ -46,14 +46,14 @@ def question3():
     answers = {}
 
     # string "yes" or "no"
-    answers["(a)"] = None
-    answers["(b)"] = None
-    answers["(c)"] = None
+    answers["(a)"] = "yes"
+    answers["(b)"] = "yes"
+    answers["(c)"] = "yes"
 
     # explain-string: explanation in english prose
-    answers["(a) example"] = None
-    answers["(b) example"] = None
-    answers["(c) example"] = None
+    answers["(a) example"] = "because each rule defines a unique combination of attributes that classify vertebrates into distinct categories."
+    answers["(b) example"] = "The rules appear to be exhaustive for the given dataset as they cover all possible combinations of the provided attributes."
+    answers["(c) example"] = "ordering is necessary because it ensures that the correct classification is applied based on the specific combinations of attributes before any more general rules"
 
     return answers
 # -----------------------------------------------------------
