@@ -128,54 +128,54 @@ def question10():
     answers = {}
 
     # float
-    answers["(a) P(A=1|+)"] = None
-    answers["(a) P(B=1|+)"] = None
-    answers["(a) P(C=1|+)"] = None
-    answers["(a) P(A=1|-)"] = None
-    answers["(a) P(B=1|-)"] = None
-    answers["(a) P(C=1|-)"] = None
+    answers["(a) P(A=1|+)"] = 0.6
+    answers["(a) P(B=1|+)"] = 0.4
+    answers["(a) P(C=1|+)"] = 0.8
+    answers["(a) P(A=1|-)"] = 0.4
+    answers["(a) P(B=1|-)"] = 0.4
+    answers["(a) P(C=1|-)"] = 0.2
 
     # type: explanatory string
-    answers["(a) P(A=1|+) explain your answer"] = None
+    answers["(a) P(A=1|+) explain your answer"] = "This probability is calculated as the fraction of positive instances where A=1 over all positive instances."
   
     # type: float
     # note: R is the sample (A=1,B=1,C=1)
-    answers["(b) P(+|R)"] = None 
-    answers["(b) P(R|+)"] = None
-    answers["(b) P(R|-)"] = None
+    answers["(b) P(+|R)"] = 0.657 
+    answers["(b) P(R|+)"] = 0.192
+    answers["(b) P(R|-)"] = 0.032
 
     # string, '+' or '-'
-    answers["(b) class label"] = None
+    answers["(b) class label"] = "+"
 
     # explain_string
-    answers["(b) Explain your reasoning"] = None
+    answers["(b) Explain your reasoning"] = "The class label '+' has a higher normalized probability for the given sample R, indicating it's more likely to be positive."
   
     # float
-    answers["(c) P(A=1)"] = None
-    answers["(c) P(B=1)"] = None
-    answers["(c) P(A=1,B=1)"] = None
+    answers["(c) P(A=1)"] = 0.4
+    answers["(c) P(B=1)"] = 0.4
+    answers["(c) P(A=1,B=1)"] = 0.2
 
     # type: string, 'yes' or 'no'
-    answers["(c) A independent of B?"] = None
+    answers["(c) A independent of B?"] = "yes"
   
     # type: float
-    answers["(d) P(A=1)"] = None
-    answers["(d) P(B=0)"] = None
-    answers["(d) P(A=1,B=0)"] = None
+    answers["(d) P(A=1)"] = 0.4
+    answers["(d) P(B=0)"] = 0.6
+    answers["(d) P(A=1,B=0)"] = 0.2
 
     # type: string: 'yes' or 'no'
-    answers["(d) A independent of B?"] = None
+    answers["(d) A independent of B?"] = "yes"
   
     # type: float
-    answers["(e) P(A=1,B=1|+)"] = None
-    answers["(e) P(A=1|+)"] = None
-    answers["(e) P(B=1|+)"] = None
+    answers["(e) P(A=1,B=1|+)"] = 0.4
+    answers["(e) P(A=1|+)"] = 0.6
+    answers["(e) P(B=1|+)"] = 0.4
 
     # type: string: 'yes' or 'no'
-    answers["(e) A independent of B given class +?"] = None
+    answers["(e) A independent of B given class +?"] = "no"
 
     # type: explanatory string
-    answers["(e) A and B conditionally independent given class +, explain"] =  None
+    answers["(e) A and B conditionally independent given class +, explain"] =  "Since P(A=1,B=1|+) does not equal the product of P(A=1|+) and P(B=1|+), A and B are not conditionally independent given the class +."
   
     return answers
 # --------------------------------------------------------
