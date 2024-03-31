@@ -13,7 +13,7 @@ def question1():
     answers["(c)"] = "yes"
     answers["(d)"] = "yes"
 
-    # explain-string: explanation in english prose
+    # explain-string: explanation in English prose
     answers["(a) explain"] = "For example, a person can be both a homeowner and he can have a low annual income, which says rules 1 and 3 can apply simultaneously"
     answers["(b) explain"] = "There are also combinations of different attribute values not covered by any rule, such as that a person with a medium annual income and not being currently employed."
     answers["(c) explain"] = "It is because the outcome for a given person may change depending on the order in which the rule is applied. For Instance, rules 5 and 7 might  conflict depending on the person's attributes."
@@ -33,7 +33,7 @@ def question2():
     answers["(c)"] = None
     answers["(d)"] = None
 
-    # explain_string: explanation in english prose
+    # explain_string: explanation in English prose
     answers["(a) explain"] = None
     answers["(b) explain"] = None
     answers["(c) explain"] = None
@@ -48,12 +48,12 @@ def question3():
     # string "yes" or "no"
     answers["(a)"] = "yes"
     answers["(b)"] = "yes"
-    answers["(c)"] = "yes"
+    answers["(c)"] = "no"
 
     # explain-string: explanation in english prose
     answers["(a) example"] = "because each rule defines the  unique combination of attributes that classify vertebrates into distinct categories."
     answers["(b) example"] = "The rules appear to be exhaustive for the given dataset as they cover all possible combinations of the provided attributes."
-    answers["(c) example"] = "ordering is necessary because it ensures that the correct classification is applied based on the specific combinations of attributes before any more general rules"
+    answers["(c) example"] = "ordering is not necessary because  the rules for vertebrate classification, as described as mutually exclusive and exhaustive, each rule applies to distinct set of conditions without overlap"
 
     return answers
 # -----------------------------------------------------------
@@ -66,7 +66,7 @@ def question7():
     answers["(c)"] = "False"
     answers["(d)"] = "True"
 
-    # explain_string: explanation in english prose
+    # explain_string: explanation in English prose
     answers["(a) explain"] = "In the back-propagation algorithm, the gradients of the weights at layer k+1 can indeed be computed using the gradients at layer k. This is because the error derivative with respect to a weight in layer k depends on the derivative of the error with respect to the neuron outputs in layer k+1."
     answers["(b) explain"] = "The activations at nodes in layer k+1 are computed using the outputs (activations) of nodes in layer k as inputs. This is a fundamental aspect of how neural networks propagate information forward from input to output."
     answers["(c) explain"] = "The vanishing gradient problem refers to the issue where gradients become increasingly small as the error is backpropagated through the layers. This makes the weights in the earlier layers change very slowly, if at all, which slows down training or leads to poor convergence. It does not refer to the training errors vanishing to zero while test errors remain large; that scenario is more indicative of overfitting."
@@ -79,33 +79,33 @@ def question8():
     answers = {}
 
     # float
-    answers["(a) P(X_1=1)"] = 0.72
-    answers["(a) P(X_2=1)"] = 0.58
-    answers["(a) P(X_1=1,X_2=1)"] = 0.4
+    answers["(a) P(X_1=1)"] = 0.65
+    answers["(a) P(X_2=1)"] = 0.41
+    answers["(a) P(X_1=1,X_2=1)"] = 0.28
 
     # string: "dependent" or "independent"
     answers["(a) Relationship between X_1 and X_2"] = "dependent"
 
     # string: "yes" or "no"
-    answers["(b) X_1 and X_2 conditionally independent given the class?"] = "no"
+    answers["(b) X_1 and X_2 conditionally independent given the class?"] = "yes"
 
     # float
     answers["(c) P(X_1=1 | +)"] = 0.8
     answers["(c) P(X_1=1 | -)"] = 0.5
     answers["(c) P(X_2=1 | +)"] = 0.5
     answers["(c) P(X_2=1 | -)"] = 0.32
-    answers["(c) P(X_3=1 | +)"] = 0.5
-    answers["(c) P(X_3=1 | -)"] = 0.5
+    answers["(c) P(X_3=1 | +)"] = 0.4
+    answers["(c) P(X_3=1 | -)"] = 0.16
 
     # For each row give the class predicted by the model after training using Naive Bayes
     # String: either '+' or '-'
     answers["(d) Row 1"] = "+"
-    answers["(d) Row 2"] = "+"
+    answers["(d) Row 2"] = "-"
     answers["(d) Row 3"] = "-"
     answers["(d) Row 4"] = "-"
 
     # float between 0 and 1
-    answers["(d) Training error rate"] = 0.0
+    answers["(d) Training error rate"] = 0.25
 
     return answers
 
@@ -114,13 +114,12 @@ def question9():
     answers = {}
 
     # int
-    answers["(a) K"] = 5
-    answers["(b) K"] = 5
+    answers["(a) K"] = 1
+    answers["(b) K"] = 50
 
     # explain_string
-    answers["(a) explain"] = "A K of 5 is chosen as it typically offers a good balance between bias and variance, making the model robust to noise and outliers without overfitting or underfitting. It considers enough neighbors to make a reasonable prediction while smoothing out local variations and noise."
-    answers["(b) explain"] = "Similar to scenario (a), a K of 5 provides a balanced approach for most datasets capturing the underlying trends without being too sensitive to noise.It's a good starting point that can be adjusted based on cross-validation to achieve better performance specific to the dataset characteristics."
-
+    answers["(a) explain"] = "Th data points are separated by well, this is why k = 1 or 5 fits well"
+    answers["(b) explain"] = "Due to lot of overlap in data points, we have to select a modest k value which could result in a induced misclassification"
     return answers
 
 # --------------------------------------------------------
@@ -128,10 +127,10 @@ def question10():
     answers = {}
 
     # float
-    answers["(a) P(A=1|+)"] = 0.6
+    answers["(a) P(A=1|+)"] = 0.4
     answers["(a) P(B=1|+)"] = 0.4
-    answers["(a) P(C=1|+)"] = 0.8
-    answers["(a) P(A=1|-)"] = 0.4
+    answers["(a) P(C=1|+)"] = 0.6
+    answers["(a) P(A=1|-)"] = 0.2
     answers["(a) P(B=1|-)"] = 0.4
     answers["(a) P(C=1|-)"] = 0.2
 
@@ -140,9 +139,9 @@ def question10():
   
     # type: float
     # note: R is the sample (A=1,B=1,C=1)
-    answers["(b) P(+|R)"] = 0.657 
-    answers["(b) P(R|+)"] = 0.192
-    answers["(b) P(R|-)"] = 0.032
+    answers["(b) P(+|R)"] = 1 
+    answers["(b) P(R|+)"] = 0.096
+    answers["(b) P(R|-)"] = 0
 
     # string, '+' or '-'
     answers["(b) class label"] = "+"
@@ -159,16 +158,16 @@ def question10():
     answers["(c) A independent of B?"] = "yes"
   
     # type: float
-    answers["(d) P(A=1)"] = 0.4
-    answers["(d) P(B=0)"] = 0.6
-    answers["(d) P(A=1,B=0)"] = 0.2
+    answers["(d) P(A=1)"] = 0.3
+    answers["(d) P(B=0)"] = 0.2
+    answers["(d) P(A=1,B=0)"] = 0.1
 
     # type: string: 'yes' or 'no'
-    answers["(d) A independent of B?"] = "yes"
+    answers["(d) A independent of B?"] = "no"
   
     # type: float
-    answers["(e) P(A=1,B=1|+)"] = 0.4
-    answers["(e) P(A=1|+)"] = 0.6
+    answers["(e) P(A=1,B=1|+)"] = 0.2
+    answers["(e) P(A=1|+)"] = 0.4
     answers["(e) P(B=1|+)"] = 0.4
 
     # type: string: 'yes' or 'no'
