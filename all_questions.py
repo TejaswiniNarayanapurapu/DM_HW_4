@@ -14,10 +14,10 @@ def question1():
     answers["(d)"] = "yes"
 
     # explain-string: explanation in english prose
-    answers["(a) explain"] = "For example, a person can be both a homeowner and have a low annual income, which means rules 1 and 3 can apply simultaneously"
-    answers["(b) explain"] = "There are combinations of attribute values not covered by any rule, such as a person with a medium annual income and not currently employed."
-    answers["(c) explain"] = "Because the outcome for a given person could change depending on the order in which the rules are applied. For instance, rules 5 and 7 could potentially conflict depending on the person's attributes."
-    answers["(d) explain"] = "a default class is needed for situations where none of the provided rules apply to a person's situation."
+    answers["(a) explain"] = "For example, a person can be both a homeowner and he can have a low annual income, which says rules 1 and 3 can apply simultaneously"
+    answers["(b) explain"] = "There are also combinations of different attribute values not covered by any rule, such as that a person with a medium annual income and not being currently employed."
+    answers["(c) explain"] = "It is because the outcome for a given person may change depending on the order in which the rule is applied. For Instance, rules 5 and 7 might  conflict depending on the person's attributes."
+    answers["(d) explain"] = "The default class is needed for instances where none of the provided rules apply to a person's situation."
 
     return answers
 
@@ -51,7 +51,7 @@ def question3():
     answers["(c)"] = "yes"
 
     # explain-string: explanation in english prose
-    answers["(a) example"] = "because each rule defines a unique combination of attributes that classify vertebrates into distinct categories."
+    answers["(a) example"] = "because each rule defines the  unique combination of attributes that classify vertebrates into distinct categories."
     answers["(b) example"] = "The rules appear to be exhaustive for the given dataset as they cover all possible combinations of the provided attributes."
     answers["(c) example"] = "ordering is necessary because it ensures that the correct classification is applied based on the specific combinations of attributes before any more general rules"
 
